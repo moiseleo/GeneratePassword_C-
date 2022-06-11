@@ -13,7 +13,10 @@ namespace WebApplication4
 
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            string dtnow = String.Empty;
+            DateTime date = DateTime.Now;
+            dtnow = Convert.ToString(date);
+            labeldt.Text = dtnow;
         }
 
         public void Button_Click(object sender, EventArgs e)
